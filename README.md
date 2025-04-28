@@ -36,7 +36,7 @@ Before installing and running the application, make sure that Python is installe
 Clone the repository to your local machine using Git:
 
 ```bash
-git clone https://github.com/JuanDevID/JuanDevID-Terminal-Portfolio.git
+git clone https://github.com/JuanDevID/Terminal.git
 cd JuanDevID-Terminal-Portfolio
 ```
 
@@ -76,7 +76,7 @@ crontab -e
 Then add the following line to run the application at system boot:
 
 ```bash
-@reboot python3 /path/to/portfolio.py
+@reboot python3 /path/to/python.py
 ```
 
 ## Usage
