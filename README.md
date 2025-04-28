@@ -1,5 +1,3 @@
-Here is the updated `README.md` file with all content in English and styled for a more professional look. It also includes the required instructions for using the terminal commands and file management in Command Prompt (CMD).
-
 # JuanDevID Terminal Portfolio
 
 ## Description
