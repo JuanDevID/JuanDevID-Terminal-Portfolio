@@ -1,8 +1,3 @@
-Here’s how you can structure the `README.md` file in English, including installation instructions, usage, rules, and licensing.
-
-### `README.md` in English:
-
-```markdown
 # JuanDevID Terminal Portfolio
 
 This is an interactive terminal application showcasing the professional portfolio of JuanDevID. It includes information about my projects, contact details, and more. This application is designed to run on multiple operating systems.
