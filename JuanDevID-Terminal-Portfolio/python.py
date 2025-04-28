@@ -3,10 +3,11 @@ import os
 import sys
 from prettytable import PrettyTable
 
-# Warna
+# Colors
 BLUE = '\033[94m'
 CYAN = '\033[96m'
 WHITE = '\033[97m'
+GREEN = '\033[92m'
 RESET = '\033[0m'
 BOLD = '\033[1m'
 
@@ -56,11 +57,12 @@ def show_help():
     table = PrettyTable()
     table.field_names = [f"{BOLD}{CYAN}Command{RESET}", f"{BOLD}{CYAN}Description{RESET}"]
     table.add_row(["help", "See available commands"])
-    table.add_row(["about", "About JuanDevID"])
-    table.add_row(["projects", "View my projects"])
-    table.add_row(["contact", "Contact information"])
-    table.add_row(["clear", "Clear the screen"])
-    table.add_row(["exit", "Exit the portfolio"])
+    table.add_row(["about", "Learn more about JuanDevID"])
+    table.add_row(["projects", "View the latest projects"])
+    table.add_row(["contact", "Contact information and links"])
+    table.add_row(["clear", "Clear the screen and reset terminal"])
+    table.add_row(["exit", "Exit the terminal portfolio"])
+    table.add_row(["social", "View social media and other networks"])
     
     print(table)
 
@@ -69,17 +71,18 @@ def show_about():
     table.field_names = [f"{BOLD}{CYAN}About Me{RESET}", ""]
     table.add_row(["Name", "JuanDevID"])
     table.add_row(["Profession", "Developer | Creative Technologist"])
-    table.add_row(["Focus", "Futuristic and elegant tech solutions"])
-    table.add_row(["Passion", "Coding, design, and innovation"])
+    table.add_row(["Focus", "Innovative tech solutions with elegant design"])
+    table.add_row(["Passion", "Programming, AI, and Future Technologies"])
     
     print(table)
 
 def show_projects():
     table = PrettyTable()
     table.field_names = [f"{BOLD}{CYAN}Project{RESET}", f"{BOLD}{CYAN}Description{RESET}"]
-    table.add_row(["Terminal Portfolio CLI", "Interactive terminal portfolio"])
-    table.add_row(["AI-powered Chatbots", "Creating chatbots with AI integration"])
-    table.add_row(["Fullstack Web Applications", "Building complete web applications"])
+    table.add_row(["Terminal Portfolio CLI", "An interactive terminal-based portfolio for showcasing skills."])
+    table.add_row(["AI Chatbots", "Creating AI-powered chatbots for various applications."])
+    table.add_row(["Web Development", "Building full-stack web applications with cutting-edge technologies."])
+    table.add_row(["Machine Learning", "Exploring ML models and AI tools for real-world applications."])
     
     print(table)
 
@@ -87,7 +90,19 @@ def show_contact():
     table = PrettyTable()
     table.field_names = [f"{BOLD}{CYAN}Contact Info{RESET}", ""]
     table.add_row(["GitHub", "https://github.com/JuanDevID"])
-    table.add_row(["X (Twitter)", "https://x.com/EOSD_Sakuya"])
+    table.add_row(["Twitter", "https://twitter.com/EOSD_Sakuya"])
+    table.add_row(["LinkedIn", "https://linkedin.com/in/juandevid"])
+    table.add_row(["Email", "juandevid@example.com"])
+    
+    print(table)
+
+def show_social():
+    table = PrettyTable()
+    table.field_names = [f"{BOLD}{CYAN}Social Media{RESET}", ""]
+    table.add_row(["GitHub", "https://github.com/JuanDevID"])
+    table.add_row(["Twitter", "https://twitter.com/EOSD_Sakuya"])
+    table.add_row(["Instagram", "https://instagram.com/JuanDevID"])
+    table.add_row(["LinkedIn", "https://linkedin.com/in/juandevid"])
     
     print(table)
 
@@ -112,6 +127,8 @@ def main():
             show_projects()
         elif command == "contact":
             show_contact()
+        elif command == "social":
+            show_social()
         elif command == "clear":
             clear_screen()
         elif command == "exit":
