@@ -106,7 +106,6 @@ If you would like to contribute to the development of this project, you can fork
 ## License
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more information.
-```
 
 ### Explanation of Sections:
 1. **Prerequisites**: Information on installing Python on different operating systems.
